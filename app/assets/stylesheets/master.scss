@@ -49,14 +49,12 @@ h1, h2, h3, h4, h5, h6, .navbar {
 .btn {
   border-radius: 0;
   background-color: #A00C6C;
+
 }
 
 
-a {
-margin-right: 10px;
-text-decoration: none;
-color: #A00C6C;
-
+a.nav-link {
+color: white;
 }
 
 .booyah-box {
@@ -96,3 +94,4 @@ body {
 .clr {
   clear: both;
 }
+
