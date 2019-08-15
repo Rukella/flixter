@@ -63,13 +63,16 @@ gem 'popper_js', '~> 1.11.1'
 gem 'bootstrap', '4.0.0.alpha6'
 gem 'simple_form'
 gem 'devise'
+gem 'carrierwave'
 gem 'figaro'
 gem 'carrierwave-aws'
-gem "fog-aws"
-gem 'carrierwave', '~> 1.3.0'
 gem 'stripe'
 gem 'ranked-model'
 gem 'jquery-ui-rails'
+gem 'mini_magick'
+gem 'fog-aws'
+
+
 
 
 source 'https://rails-assets.org' do
@@ -78,5 +81,4 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-gem 'mini_magick'
 gem "font-awesome-rails"

@@ -1,5 +1,6 @@
 # config/initializers/carrierwave.rb
 
+
 CarrierWave.configure do |config|
   if Rails.env.development?
   config.cache_dir = '/home/vagrant/uploads_tmp/tmp/uploads'
@@ -16,3 +17,4 @@ CarrierWave.configure do |config|
       region:            ENV["AWS_REGION"]
   }
 end
+
