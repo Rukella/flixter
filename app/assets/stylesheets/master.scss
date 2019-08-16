@@ -1,28 +1,33 @@
 @import "bootstrap";
-@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
-@import "font-awesome";
 
 .navbar {
   font-family: 'Open Sans', sans-serif;
   font-weight: 200;
   box-shadow: 0px 1px 3px #2a2a2a;
   background: image_url('blackorchid.png');
+  border-radius: 0;
   
-}
+
+  }
+ 
 
 
- .navbar-inverse .navbar-brand {
-  color: white;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 35px;
+ .navbar-inverse a.navbar-brand {
+  color: white;;
+  font-family: 'pt_sans_captionregular';
+  font-size: 28px;
   text-decoration: none;
   font-weight: 100;
 
+} 
+
+.navbar-brand {
+  color: #ff8080;
 }
 
 
 .hero {
-  background: image_url('hero1.jpg') no-repeat center center fixed;
+  background: image_url('hero5.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -41,21 +46,21 @@ h1, h2, h3, h4, h5, h6, .navbar {
 }
 
 .frosty h1 {
-  font-family: 'nobileregular', sans-serif;
+  font-family: 'pt_sans_captionbold';
   font-weight: 100;
   text-shadow: rgba(0, 0, 0, 0.95) 1px 1px;
 }
 
 .frosty h2 {
- font-family: 'nobileregular', sans-serif;
+ font-family: 'pt_sansregular';
   font-weight: 200;
   text-shadow: rgba(0, 0, 0, 0.95) 1px 1px;
 }
 
 
 
-a.nav-link {
-color: white;
+a {
+color: #DE781F;
 }
 
 .booyah-box {
@@ -155,7 +160,7 @@ ul .header .fa {
 }
 
 
-img {width: 50%;
+img {width: 80%;
   display: block;
   margin-left: auto;
   margin-right: auto
@@ -168,4 +173,7 @@ img {width: 50%;
         
 }
 
+
+       
+    
 
