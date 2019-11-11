@@ -5,8 +5,8 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'true' %>
+     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'true' %>
       <link href="https://vjs.zencdn.net/7.6.0/video-js.css" rel="stylesheet">
   </head>
 
@@ -26,7 +26,7 @@
     </ul>
     <ul class="navbar-nav">
         <% if user_signed_in? %>
-        <li class="nav-item active">
+        <li class="nav-item">
           <%= link_to 'My Dashboard', dashboard_path, class: 'nav-link' %>
         </li>
          <%= link_to "Sign out", destroy_user_session_path, method: :delete, class: "nav-link" %>
@@ -85,17 +85,8 @@
     <div class="col-12 col-sm-3 col lg-">
       <b>Social</b>
       <br />
-      <br />
-      <%= link_to 'https://www.linkedin.com/in/rukevwe' do %>
-        <span class="fa fa-linkedin-square fa-2x social-button"></span>
-      <% end %>
-      <%= link_to 'https://facebook.com/Rukella' do %>
-        <span class="fa fa-facebook-square fa-2x social-button"></span>
-      <% end %>
-      <%= link_to 'https://twitter.com/Rukanderson' do %>
-        <span class="fa fa-twitter-square fa-2x social-button"></span>
-      <% end %>
-      <%= link_to 'https://github.com/Rukella' do %>
+      <br />  
+      <%= link_to 'https://github.com/ruky-a' do %>
         <span class="fa fa-github-square fa-2x social-button"></span>
       <% end %>
     </div>

@@ -10,15 +10,15 @@ default: &default
   
 development:
   <<: *default
-  database: flixter_development
+  database: project3_development
 
 test:
   <<: *default
-  database: flixter_test
+  database: project3_test
 
 
 production:
   <<: *default
-  database: flixter_production
+  database: project3_production
   #username: flixter
   #password: <%= ENV['FLIXTER_DATABASE_PASSWORD'] %>
