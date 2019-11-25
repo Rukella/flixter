@@ -21,6 +21,7 @@
    <hr class="col-8 offset-2">
    <br class="clr" />
   <% end %>
+  <hr />
 
   <h1> What I'm Teaching</h1>
   <% current_user.courses.each do |course| %>
@@ -46,38 +47,5 @@
 </div>
 
 
- <div class="-box profile">
-  <div class="row">
-     <div class="col-4">
-     <%= image_tag avatar_url(@user), class: "avatar2" %>
-   </div>
-
-   <div class="col-8 title"><br />
-    <h1><%= @user.email %></h1><br />
-    <h3>Member Since: <%= @user.created_at.strftime("%B %d, %Y") %></h3><br />
-    <h4><%= @user.fullname %></h4><br />
-    <h4><%= @user.phone_number%></h4>
-   </div>
-  </div>
- <div class="clear"></div>
-</div
 
 
-
-#   def self.from_omniauth(auth)
-#   user = User.where(email: auth.info.email).first 
-#   if user
-#     return user
-#   else
-#     where(provider: auth.provider, uid: auth.uid).first_or_create do |user|
-#     user.email = auth.info.email
-#     user.password = Devise.friendly_token[0, 20]
-#     user.fullname = auth.info.name   
-#     user.image = auth.info.image 
-#     user.uid = auth.uid
-#     user.provider = auth.provider
-
-#     # user.skip_confirmation!
-#   end
-#  end
-# end

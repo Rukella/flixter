@@ -12,7 +12,7 @@
 
   <body>
     <div id="flex-content-container">
-<nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
+<nav class="navbar navbar-toggleable-md navbar-inverse"style="background-color:  #2f43c6;">
   <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
      <span class="navbar-toggler-icon"></span>
   </button>
@@ -26,7 +26,7 @@
     </ul>
     <ul class="navbar-nav">
         <% if user_signed_in? %>
-        <li class="nav-item">
+        <li class="nav-item active">
           <%= link_to 'My Dashboard', dashboard_path, class: 'nav-link' %>
         </li>
          <%= link_to "Sign out", destroy_user_session_path, method: :delete, class: "nav-link" %>
@@ -85,10 +85,13 @@
     <div class="col-12 col-sm-3 col lg-">
       <b>Social</b>
       <br />
-      <br />  
-      <%= link_to 'https://github.com/ruky-a' do %>
-        <span class="fa fa-github-square fa-2x social-button"></span>
+      <%= link_to 'https://www.linkedin.com/in/rukevwe' do %>
+        <span class="fa fa-linkedin-square fa-2x social-button"></span>
       <% end %>
+      <%= link_to 'https://github.com/Rukella' do %>
+        <span class="fa fa-github-square fa-2x social-button"><p></span>
+      <% end %>
+
     </div>
   </div>
 </div>
