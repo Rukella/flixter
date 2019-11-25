@@ -1,3 +1,3 @@
-# TWO-SIDED MARKET PLACE APP
+# Two-sided market place app
 
-A two-sided, video-streaming marketplace platform that features credit card payment capabilities, user role management, complex user interfaces, and advanced database relationships.
+A video-streaming marketplace platform that features credit card payment capabilities, user role management, complex user interfaces, and advanced database relationships.
